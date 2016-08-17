@@ -149,6 +149,20 @@
         },
         {
           "type": "course-project",
+          "description": "Developed a radiographic image enhancement software using wavelet transform analysis and soft fixed form thresholding.",
+          "tech": [
+            "Matlab"
+          ]
+        },
+        {
+          "type": "course-project",
+          "description": "Developed a software to automatically establish identity of artists in audio Music Signals exploiting machine learning techniques and audio processing using acoustic features extracted from song database.",
+          "tech": [
+            "Matlab"
+          ]
+        },
+        {
+          "type": "course-project",
           "description": "developed a real-time karaoke UI app for synthesizing voice on top of instrumental music which displays musical notes by detecting pitch of produced music; also developed feature for mashing up multiple music tracks",
           "tech": [
             "Python",
