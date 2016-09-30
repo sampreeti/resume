@@ -68,11 +68,11 @@
 }
 
 .list-group-item.strip {
-    border-bottom: 1px solid white;
+    border-top: 1px solid white;
 }
 
-.list-group-item:first-child.strip {
-    border-top: 1px solid white;
+.list-group-item:last-child.strip {
+    border-bottom: 1px solid white;
 }
 
 .list-group-item.strip {
@@ -83,16 +83,6 @@
 
 .dim {
     color: #eee;
-}
-
-
-
-
-
-
-.strip {
-    font-size: 93.5%;
-    line-height: 1.2;
 }
 
 .info-address {
@@ -139,4 +129,6 @@
     content: none;
 }
 
-
+.ns7r .profile-pic{
+    display: none;
+}

@@ -11,16 +11,16 @@
     .card:hover {
         margin:0 -4px 0 -4em;
         border-top:none;
-        border-right:4px solid #f8f8f8;
-        border-left:4em solid #f8f8f8;
+        border-right:4px solid #f8f8ff;
+        border-left:4em solid #f8f8ff;
         background-color:#f8f8ff;
         border-radius:2px;
     }
     .card:hover .list-group-item.strip {
-        border-bottom: 1px solid #eee;
-    }
-    .card:hover .list-group-item:first-child.strip {
         border-top: 1px solid #eee;
+    }
+    .card:hover .list-group-item:last-child.strip {
+        border-bottom: 1px solid #eee;
     }
     /* strips hover */
     .card:hover .strip:hover {
@@ -37,21 +37,21 @@
 }
 /* common layout + colors */
 @media all {
-    .ns7r header { margin-bottom:2.5em; }
+    .ns7r header { margin-bottom:1.5em; }
     .ns7r .name {}
     .ns7r .highlights span { display:block; color:#444;}
     .ns7r h2 { margin-top:.3em; margin-bottom:.2em; }
     .ns7r h2.section-heading span { display:block; }
     .ns7r h4 { display:inline; }
+    .ns7r .time-period{color: #666;}
     .ns7r .list-group { margin-bottom:3px; }
     .sidebar {
         background:#eee !important;
         border-top:4px solid #ccc;
     }
-    .skills { margin-bottom:2em; }
-    .sidebar h3 { margin-bottom:0; margin-top: .5em;}
+    .side-section h3.section-head { margin-bottom:0; margin-top: .5em;}
     .ns7r footer {
-        margin:90px -8px 4px -8px;
+        margin:45px -8px 4px -8px;
         background-color:#ddd !important;
         border:8px solid #ddd;
     }
@@ -60,10 +60,10 @@
         border-top:1px solid #ccc;
     }
     .silver {
-        color:#bbc !important;
+        color:#bbc;
     }
     .silver.fa-2x {
-        color:#eef !important;
+        color:#eef;
     }
 }
 
@@ -75,6 +75,12 @@
     }
     .silver {
         display: none;
+    }
+    .list-group-item.strip {
+        border-top: 1px solid #f0f0f0 !important;
+    }
+    .time-period.text-right{
+        text-align: left;
     }
 }
 @media screen and (min-width: 1000px) {
@@ -92,6 +98,15 @@
         margin-top: 8px;
         box-shadow: 0 3px 3px 1px #333;
     }
+
+    .ns7r header:hover .profile-pic{
+        display: block;
+        margin-left: -140px;
+        margin-bottom: -128px;
+        border-radius: 64px;
+        border: 4px solid #eee;
+        box-shadow:0 0 1px #000;
+    }
 }
 
 @media print {
@@ -103,6 +118,9 @@
         display: none;
     }
 
+    .ns7r footer {
+        margin: 65px -8px 4px -8px;
+    }
     a[href].print-link::after {
         display: inline !important;
         content: " (" attr(href) ")";
@@ -135,12 +153,7 @@
 }
 /* fonts by item */
 @media all {
-    .ns7r { font-size:15px; }
-    .ns7r h2 { font-size:175%; }
-    .ns7r h4 { font-size:100%; font-weight:700; }
-    .sidebar {  }
-    .sidebar h3 { font-size:105%;  }
-    .ns7r footer { font-size:90%; }
+
 }
 /* individual styles */
 @media all {

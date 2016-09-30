@@ -2,6 +2,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Resume: Sampreeti Alam</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet"
 				href="bootstrap/css/bootstrap.min.css">
@@ -20,9 +21,9 @@
 	<!-- font awesome -->
 	<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="bootstrap-print-alike.css">
-	<link rel="stylesheet" href="fonts.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="ns7r.css">
+	<link rel="stylesheet" href="fonts.css">
 	<script>
 		function applyBootstrapJS() {
 			$('[data-toggle="tooltip"]').tooltip({html: true})
@@ -93,74 +94,12 @@
 		<div class="left-border col-md-1"></div>
 		<div class="content col-md-7">
 			<header>
+				<img class="profile-pic" src="{{ _.avatar }}" width="128px"/>
 				<h1 class="name">{{ _.name }}</h1>
 				<div class="highlights">
 					<span ng-repeat="highlight in _.highlights" ng-bind-html-compile="highlight"></span>
 				</div>
 			</header>
-
-			<div class="panel">
-				<div class="panel-heading">
-					<h2 class="section-heading"><span>Education</span></h2>
-				</div>
-				<div class="panel-body">
-					<ul class="list-group educations">
-						<li class="list-group-item education" ng-repeat="ed in _.education">
-							<div class="card">
-								<div class="card-heading">
-									<i class="fa fa-li fa-2x fa-briefcase silver" aria-hidden="true"></i>
-									<script type="text/ng-template" id="edTitlePopover.html">
-										<span ng-bind-html="ed.about"></span>
-									</script>
-									<h4 class="card-title"
-													popover-enable="ed.about!=undefined"
-													popover-popup-close-delay="500"
-													popover-placement="top-left"
-													popover-trigger="click mouseenter"
-													popover-title="{{ ed.institution }}"
-													uib-popover-template="'edTitlePopover.html'">
-										{{ed.institution}}
-									</h4>
-									<a href="{{ ed.mapUrl }}" target="_blank"><i
-													class="fa fa-map-marker dim"></i></a>&thinsp;<span
-												class="place-name">{{ed.location }}</span>
-									<div class="row" ng-repeat="degree in ed.degree">
-										<div class="col-md-8">
-											<span class="text-primary degree">{{ degree.title }}</span>
-										</div>
-										<div class="col-md-4 text-right time-period">
-											<span class="degree-period" ng-if="degree.time.since!=undefined">
-												{{ degree.time.since }}
-												- <i ng-if="degree.time.current" class="fa fa-spinner fa-pulse fa-fw"
-															uib-tooltip="current"></i>
-												{{ degree.time.until}}
-											</span>
-											<span class="degree-period" ng-if="degree.time.period!=undefined">
-												{{ degree.time.period }}
-											</span>
-										</div>
-									</div>
-								</div>
-								<ul class="list-group strips">
-									<li class="list-group-item strip" ng-repeat="info in ed.info">
-										<i class="fa-li fa fa-angle-right silver" aria-hidden="true"></i>
-										<span ng-if="info.type=='key-courses'">
-											<em>Key Courses</em>: <i class="fa fa-book"></i>
-											<span ng-repeat="course in info.courses" ng-bind-html-compile="course"
-															class="comma-sep-list"></span>
-										</span>
-										<span ng-if="info.type=='thesis'">
-											<em>Thesis</em>: <i class="fa fa-lightbulb-o"></i>
-										</span>
-										<span class="description" ng-bind-html-compile="mlt(info.description)"></span>
-										<code ng-repeat="key in info.tech">{{ key }}</code>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
 			<div class="panel">
 				<div class="panel-heading">
 					<h2 class="section-heading"><span>Experience</span></h2>
@@ -215,6 +154,69 @@
 					</ul>
 				</div>
 			</div>
+			<div class="panel">
+				<div class="panel-heading">
+					<h2 class="section-heading"><span>Education</span></h2>
+				</div>
+				<div class="panel-body">
+					<ul class="list-group educations">
+						<li class="list-group-item education" ng-repeat="ed in _.education">
+							<div class="card">
+								<div class="card-heading">
+									<i class="fa fa-li fa-2x fa-graduation-cap silver" aria-hidden="true"></i>
+									<script type="text/ng-template" id="edTitlePopover.html">
+										<span ng-bind-html="ed.about"></span>
+									</script>
+									<h4 class="card-title"
+											popover-enable="ed.about!=undefined"
+											popover-popup-close-delay="500"
+											popover-placement="top-left"
+											popover-trigger="click mouseenter"
+											popover-title="{{ ed.institution }}"
+											uib-popover-template="'edTitlePopover.html'">
+										{{ed.institution}}
+									</h4>
+									<a href="{{ ed.mapUrl }}" target="_blank"><i
+												class="fa fa-map-marker dim"></i></a>&thinsp;<span
+											class="place-name">{{ed.location }}</span>
+									<div class="row" ng-repeat="degree in ed.degree">
+										<div class="col-md-8">
+											<span class="text-primary degree">{{ degree.title }}</span>
+											<small class="text-muted cgpa" ng-if="degree.cgpa!=undefined">(CGPA:{{degree.cgpa}})</small>
+										</div>
+										<div class="col-md-4 text-right time-period">
+											<span class="degree-period" ng-if="degree.time.since!=undefined">
+												{{ degree.time.since }}
+												- <i ng-if="degree.time.current" class="fa fa-spinner fa-pulse fa-fw"
+														 uib-tooltip="current"></i>
+												{{ degree.time.until}}
+											</span>
+											<span class="degree-period" ng-if="degree.time.period!=undefined">
+												{{ degree.time.period }}
+											</span>
+										</div>
+									</div>
+								</div>
+								<ul class="list-group strips">
+									<li class="list-group-item strip" ng-repeat="info in ed.info">
+										<i class="fa-li fa fa-angle-right silver" aria-hidden="true"></i>
+										<span ng-if="info.type=='key-courses'">
+											<em>Key Courses</em>: <i class="fa fa-book"></i>
+											<span ng-repeat="course in info.courses" ng-bind-html-compile="course"
+														class="comma-sep-list"></span>
+										</span>
+										<span ng-if="info.type=='thesis'">
+											<em>Thesis</em>: <i class="fa fa-lightbulb-o"></i>
+										</span>
+										<span class="description" ng-bind-html-compile="mlt(info.description)"></span>
+										<code ng-repeat="key in info.tech">{{ key }}</code>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div><!--  content ends -->
 		<div class="sidebar col-md-3">
 			<div style="height: 20px;"></div>
@@ -250,24 +252,30 @@
 									class="comma-sep-list"><code>{{ lang }}</code></span>
 					</span>
 					<br/>
-					<span>
+					<small>
 						<strong class="text-primary">Familiar with:</strong>
 						<span ng-repeat="fw in _.skills.other"
 									class="comma-sep-list"><code>{{ fw }}</code></span>
 						etc.
-					</span>
+					</small>
 				</div>
 			</div>
-			<div class="side-note row" ng-repeat="sn in _.sideNotes">
+			<div class="side-note row" ng-repeat="note in _.sideNotes">
+				<div class="col-md-12">
+					<strong class="text-primary">{{ note.head }}</strong>
+					<span ng-bind-html-compile="note.body"></span>
+				</div>
+			</div>
+			<div class="side-section row" ng-repeat="section in _.sections">
 				<div class="col-md-12">
 					<div class="panel">
 						<div class="panel-heading">
-							<h3 class="text-primary">{{ sn.about }}</h3>
+							<h3 class="section-head text-primary">{{section.title}}</h3>
 						</div>
 						<div class="panel-body">
-							<ul class="list-group">
+							<ul class="list-group" ng-repeat="info in section.info">
+								<li class="list-group-item" ng-bind-html-compile="info.description"></li>
 								<li class="list-group-item">
-									{{sn.info}}
 								</li>
 							</ul>
 						</div>
