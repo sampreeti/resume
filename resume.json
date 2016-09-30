@@ -15,7 +15,7 @@
   "phone": "+1 (631) 565-3464",
   "telUrl": "tel:+16315653464",
   "email": "sampreeti.a@gmail.com",
-  "website": "http://sampreeti.com/",
+  "website": "http://sampreeti.com",
   "skills": {
     "programming": [
       "MATLAB",
@@ -28,26 +28,56 @@
       "JavaScript"
     ]
   },
-  "sideNotes": [
+  "sections": [
     {
-      "about": "Technical knowledge",
-      "info": "DSP, Audio Processing, Image Processing, Music Information Retrieval, Software defined radio design, Embedded Systems, Device Driver, ARM, Linux"
+      "title": "Technical knowledge",
+      "info": [
+        {
+          "description": [
+            "DSP, Audio Processing, Image Processing, Music Information Retrieval, Software defined radio design, Embedded Systems, Device Driver, ARM, Linux"
+          ]
+        }
+      ]
     },
     {
-      "about": "Simulation",
-      "info": "MATLAB, PSpice, Visual Studio"
+      "title": "Simulation",
+      "info": [
+        {
+          "description": [
+            "MATLAB, PSpice, Visual Studio"
+          ]
+        }
+      ]
     },
     {
-      "about": "Development",
-      "info": "GUI, Object Oriented Design, UML, WPF"
+      "title": "Development",
+      "info": [
+        {
+          "description": [
+            "GUI, Object Oriented Design, UML, WPF"
+          ]
+        }
+      ]
     },
     {
-      "about": "Hardware & systems skills",
-      "info": "Porting and optimization of various algorithms on hardware, Microcontroller programming, Linux tool chain"
+      "title": "Hardware & systems skills",
+      "info": [
+        {
+          "description": [
+            "Porting and optimization of various algorithms on hardware, Microcontroller programming, Linux tool chain"
+          ]
+        }
+      ]
     },
     {
-      "about": "Leadership",
-      "info": "Class Representative(2008), Section A, Class of 2010, EEE Department, RUET"
+      "title": "Leadership",
+      "info": [
+        {
+          "description": [
+            "Class Representative(2008), Section A, Class of 2010, EEE Department, RUET"
+          ]
+        }
+      ]
     }
   ],
   "experience": [
