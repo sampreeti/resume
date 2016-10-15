@@ -2,7 +2,7 @@
   "name": "Sampreeti Alam",
   "highlights": [
     "MS Electrical Engineering at NYU",
-    "B.Sc. (Engineering) from RUET",
+    "B.Sc. (Electrical Engineering) from RUET",
     "4 years in industry"
   ],
   "address": {
@@ -69,6 +69,17 @@
         }
       ]
     },
+    {
+    "title": "Awards",
+      "info": [
+        {
+          "description": [
+            "3rd position in Spectrum ShaRC cognitive radio design challange hosted by Virginia Tech University, 2016"
+          ]
+        }
+      ]
+    },
+    {
     {
       "title": "Leadership",
       "info": [
@@ -257,7 +268,7 @@
       "for": "Profiles",
       "fa": "fa-linkedin",
       "url": [
-        "http://bit.ly/li-sampreeti"
+        "https://www.linkedin.com/in/sampreeti"
       ]
     }
   ],
