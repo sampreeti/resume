@@ -34,7 +34,7 @@
       "info": [
         {
           "description": [
-            "DSP, Audio Processing, Image Processing, Music Information Retrieval, Software defined radio design, Embedded Systems, Device Driver, ARM, Linux"
+            "DSP, Audio Processing, Image Processing, Music Information Retrieval, Software defined radio design, Embedded Systems, Device Driver, ARM, Linux tool chain"
           ]
         }
       ]
@@ -55,16 +55,6 @@
         {
           "description": [
             "GUI, Object Oriented Design, UML, WPF"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Hardware & systems skills",
-      "info": [
-        {
-          "description": [
-            "Porting and optimization of various algorithms on hardware, Microcontroller programming, Linux tool chain"
           ]
         }
       ]
