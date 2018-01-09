@@ -201,6 +201,13 @@
         },
         {
           "type": "course-project",
+          "description": "developed an algorithm aiming noise removal and segmentation of retinal Layers in Optical Coherence Tomography Images.",
+          "tech": [
+            "Matlab"
+          ]
+        },
+        {
+          "type": "course-project",
           "description": "Designed software defined radio with agile RX/TX which adaptively maximize SNR while aiming to maximize packet reception",
           "tech": [
             "Python"
