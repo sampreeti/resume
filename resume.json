@@ -201,7 +201,7 @@
         },
         {
           "type": "course-project",
-          "description": "developed an algorithm aiming noise removal and segmentation of retinal Layers in Optical Coherence Tomography Images.",
+          "description": "developed an algorithm aiming noise removal and segmentation of retinal layers in Optical Coherence Tomography images.",
           "tech": [
             "Matlab"
           ]
@@ -267,6 +267,6 @@
       ]
     }
   ],
-  "dateUpdated": "Aug 16, 2016",
+  "dateUpdated": "Jan 1, 2018",
   "hosted": "http://sampreeti.github.io/resume"
 }
