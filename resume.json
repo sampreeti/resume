@@ -208,6 +208,13 @@
         },
         {
           "type": "course-project",
+          "description": "implemented a monitoring system to check the status of environmental elements affecting plant health.",
+          "tech": [
+            "node.js, arduino, intel edison"
+          ]
+        },
+        {
+          "type": "course-project",
           "description": "Designed software defined radio with agile RX/TX which adaptively maximize SNR while aiming to maximize packet reception",
           "tech": [
             "Python"
