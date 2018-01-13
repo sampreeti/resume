@@ -208,7 +208,7 @@
         },
         {
           "type": "course-project",
-          "description": "implemented a monitoring system to check the status of environmental elements affecting plant health.",
+          "description": "developed a monitoring system to check the status of environmental elements affecting plant health.",
           "tech": [
             "node.js, arduino, intel edison"
           ]
@@ -253,6 +253,12 @@
             "Digital Communication Systems",
             "Linear Systems",
             "Wireless Communication"
+          ]
+        },
+        {
+          "type": "CGPA",
+          "description": [
+            "3.25, top 30% among 125 students in class"
           ]
         }
       ]
