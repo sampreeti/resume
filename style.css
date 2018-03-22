@@ -38,7 +38,7 @@
 /* common layout + colors */
 @media all {
     .ns7r header { margin-bottom:1.5em; }
-    .ns7r .name {}
+    .ns7r .name { margin-bottom: 1em; }
     .ns7r .highlights span { display:block; color:#444;}
     .ns7r h2 { margin-top:.3em; margin-bottom:.2em; }
     .ns7r h2.section-heading span { display:block; }
