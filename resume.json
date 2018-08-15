@@ -5,7 +5,7 @@
 
   ],
   "address": {
-    "street": "190 Mineola Blvd 5L",
+    "street": "190 Mineola Blvd.",
     "city": "Mineola",
     "state": "NY",
     "stateFull": "New York",
@@ -139,7 +139,7 @@
         },
         {
           "type": "responsibility",
-          "description": "Application development for Tizen ",
+          "description": "Developed application for Tizen",
           "tech": [
             "JavaScript",
             "HTML5"
@@ -192,7 +192,7 @@
         },
         {
           "type": "course-project",
-          "description": "developed a real-time karaoke UI app for synthesizing voice on top of instrumental music which displays musical notes by detecting pitch of produced music; also developed feature for mashing up multiple music tracks",
+          "description": "developed a real-time karaoke UI app for synthesizing voice on top of instrumental music which displays musical notes by detecting pitch of produced music; also developed feature for multiple music tracks mash-up and displaying lyrics.",
           "tech": [
             "Python",
             "Tkinter",
