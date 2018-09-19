@@ -18,10 +18,10 @@
   "skills": {
     "programming": [
       "MATLAB",
-      "Python"
+      "Python",
+      "C"
     ],
     "other": [
-      "C",
       "C++",
       "C#",
       "JavaScript"
@@ -104,14 +104,6 @@
       "info": [
         {
           "type": "responsibility",
-          "description": "Simulated digital signal modulation over noisy AWGN channel, implemented transmitter & inner receiver and reconstructed signal at receiver end using SRRC filters as part of DSP exploratory project",
-          "tech": [
-            "C",
-            "Juzzle Simulator"
-          ]
-        },
-        {
-          "type": "responsibility",
           "description": "Developed Windows & Linux based platform on target SoC for <abbr data-toggle='tooltip' title='Field-programmable gate array'>FPGA</abbr> and post-silicon Camera SoC (System on Chip) verification and implemented a host – target interaction protocol <br/>",
           "tech": [
             "C#",
@@ -128,6 +120,14 @@
             "NAND/NOR Flash",
             "OneNAND",
             "DMA"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": "Simulated digital signal modulation over noisy AWGN channel, implemented transmitter & inner receiver and reconstructed signal at receiver end using SRRC filters as part of DSP exploratory project",
+          "tech": [
+            "C",
+            "Juzzle Simulator"
           ]
         },
         {
@@ -274,6 +274,6 @@
       ]
     }
   ],
-  "dateUpdated": "Aug 15, 2018",
+  "dateUpdated": "Sep 19, 2018",
   "hosted": "http://sampreeti.github.io/resume"
 }
