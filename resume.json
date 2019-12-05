@@ -5,11 +5,10 @@
 
   ],
   "address": {
-    "street": "111 N Rengstorff Ave.",
-		"city": "Mountain View",
-		"state": "CA",
-		"stateFull": "California",
-		"postCode": "94043"
+    "city": "Mountain View",
+    "state": "CA",
+    "stateFull": "California",
+    "postCode": "94043"
   },
   "phone": "+1 (631) 565-3464",
   "telUrl": "tel:+16315653464",
