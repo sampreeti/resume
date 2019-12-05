@@ -5,11 +5,11 @@
 
   ],
   "address": {
-    "street": "190 Mineola Blvd.",
-    "city": "Mineola",
-    "state": "NY",
-    "stateFull": "New York",
-    "postCode": "11501"
+    "street": "111 N Rengstorff Ave.",
+		"city": "Mountain View",
+		"state": "CA",
+		"stateFull": "California",
+		"postCode": "94043"
   },
   "phone": "+1 (631) 565-3464",
   "telUrl": "tel:+16315653464",
@@ -274,6 +274,6 @@
       ]
     }
   ],
-  "dateUpdated": "Sep 19, 2018",
+  "dateUpdated": "Dec 04, 2019",
   "hosted": "http://sampreeti.github.io/resume"
 }
